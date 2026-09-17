@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeaconCream - Official Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-slate-100 text-slate-900 font-sans antialiased" id="mainBody">
+
+    <!-- Header Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-slate-900 border-b border-slate-800 shadow-md">
+        <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 gap-2">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 via-indigo-500 to-amber-400 p-0.5 flex items-center justify-center shadow-md">
+                        <div class="w-full h-full bg-slate-900 rounded-[10px] flex items-center justify-center">
+                            <i class="fa-solid fa-play text-blue-400 text-lg"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="font-extrabold text-base sm:text-lg tracking-tight text-white leading-none">BeaconCream</h1>
+                        <p class="text-xs text-slate-400 font-medium">Halaman Utama BeaconCream</p>
+                    </div>
+                </div>
+                <!-- Navigation to other pages -->
+                <nav class="hidden md:flex items-center gap-1 bg-slate-800/80 p-1.5 rounded-full border border-slate-700">
+                    <a href="beaconcream.html" class="w-32 sm:w-36 py-2 rounded-full text-xs sm:text-sm font-semibold flex items-center justify-center gap-2 bg-blue-600 text-white font-bold">
+                        <i class="fa-brands fa-youtube text-base"></i><span>BeaconCream</span>
+                    </a>
+                    <a href="beaconpret.html" class="w-32 sm:w-36 py-2 rounded-full text-xs sm:text-sm font-semibold flex items-center justify-center gap-2 text-slate-300 hover:text-white hover:bg-slate-700">
+                        <i class="fa-solid fa-masks-theater text-base"></i><span>Bikenpret</span>
+                    </a>
+                    <a href="bakwan.html" class="w-32 sm:w-36 py-2 rounded-full text-xs sm:text-sm font-semibold flex items-center justify-center gap-2 text-slate-300 hover:text-white hover:bg-slate-700">
+                        <i class="fa-solid fa-cubes text-base"></i><span>Bakwan Berkawan</span>
+                    </a>
+                    <a href="index.html" class="w-32 sm:w-36 py-2 rounded-full text-xs sm:text-sm font-semibold flex items-center justify-center gap-2 text-slate-300 hover:text-white hover:bg-slate-700">
+                        <i class="fa-solid fa-user-gear text-base"></i><span>Nelson Wijaya</span>
+                    </a>
+                </nav>
+                <div class="flex items-center gap-2">
+                    <a href="https://www.youtube.com/@BeaconCream" target="_blank" class="px-3.5 py-2 bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold rounded-xl transition-all flex items-center gap-2 shadow-sm">
+                        <i class="fa-brands fa-youtube text-sm"></i>
+                        <span>Kunjungi YT BeaconCream</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION BEACONCREAM -->
+    <section class="min-h-screen pb-16">
+        <div class="max-w-6xl mx-auto px-4 py-6 bg-white border-b border-sky-100 shadow-sm">
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-5">
+                <div class="yt-cover-banner w-full">
+                    <img src="img/Cuplikan layar 2026-09-17 185330.png" alt="Talitha Raihana" class="w-full rounded-xl object-cover">
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-6xl mx-auto px-4 py-6 bg-white text-slate-900 border-b border-slate-200 shadow-md">
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-5">
+                <div class="relative -mt-12 sm:-mt-16 flex-shrink-0">
+                    <div class="w-24 h-24 sm:w-32 sm:h-32 rounded-full border-4 border-white bg-slate-900 shadow-xl overflow-hidden flex items-center justify-center">
+                        <img src="img/Cuplikan layar 2026-09-17 185307.png" alt="BeaconCream Avatar" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class="flex-1 text-center sm:text-left">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                        <div>
+                            <h1 class="text-2xl font-extrabold text-slate-900 flex items-center justify-center sm:justify-start gap-2">
+                                BeaconCream
+                            </h1>
+                            <p class="text-xs text-slate-500 mt-1 font-mono">@BeaconCream • 7.25M subscriber • 3.9K video</p>
+                            <p class="text-xs sm:text-sm text-slate-600 mt-2 max-w-2xl line-clamp-2">
+                               Hai Kawan! Aku BeaconCream!
+
+                                Beacon itu mercusuar, Cream itu yaaa krim...
+                                Kenapa? ya kedengeran enak aja...
+
+                                BTW aku main Roblox dan Minecraft di channel ini.
+                            </p>
+                        </div>
+                        <div class="flex items-center justify-center gap-2 mt-2 sm:mt-0">
+                            <button id="subBtnBC" onclick="toggleSubscribe('BC')" class="bg-red-600 hover:bg-red-500 text-white px-5 py-2.5 rounded-full font-bold text-xs sm:text-sm transition-all duration-200 flex items-center gap-2 shadow-lg">
+                                <i class="fa-solid fa-bell text-xs"></i>
+                                <span id="subTextBC">SUBSCRIBE</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center gap-6 mt-6 border-b border-slate-200 text-xs sm:text-sm font-semibold text-slate-600 overflow-x-auto no-scrollbar">
+                <button class="py-2.5 border-b-2 border-slate-900 font-extrabold text-slate-900">BERANDA</button>
+                <button class="py-2.5 hover:text-slate-900 transition-colors">VIDEO</button>
+                <button class="py-2.5 hover:text-slate-900 transition-colors">SHORTS</button>
+                <button class="py-2.5 hover:text-slate-900 transition-colors">PLAYLIST</button>
+                <button class="py-2.5 hover:text-slate-900 transition-colors">KOMUNITAS</button>
+                <button class="py-2.5 hover:text-slate-900 transition-colors">TENTANG CHANNEL</button>
+            </div>
+        </div>
+
+        <div class="max-w-6xl mx-auto px-4 py-8 space-y-8">
+            
+            <!-- VIDEO UNGGULAN UTAMA (Langsung Buka Link YouTube) -->
+            <div class="bg-white text-slate-900 p-4 sm:p-5 rounded-2xl border border-slate-200 shadow-md flex flex-col md:flex-row gap-6 items-center">
+                <!-- Masukkan LINK YOUTUBE Video Unggulan di href di bawah -->
+                <a href="https://youtu.be/ibnSO5KF748?si=Ae6yLGBamfMPGY8x" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="relative w-full md:w-7/12 aspect-video bg-slate-900 rounded-xl overflow-hidden group cursor-pointer border border-slate-200 block">
+                    <img src="https://img.youtube.com/vi/ibnSO5KF748/hqdefault.jpg" alt="Featured Video" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 opacity-95 group-hover:opacity-100">
+                    <div class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors flex items-center justify-center">
+                        <div class="w-14 h-14 bg-red-600 text-white rounded-full flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-play text-xl ml-1"></i>
+                        </div>
+                    </div>
+                    <span class="absolute bottom-2 right-2 bg-slate-900/90 text-white text-[11px] font-mono px-2 py-0.5 rounded font-medium">24:15</span>
+                </a>
+
+                <div class="w-full md:w-5/12 space-y-3">
+                    <span class="bg-slate-100 text-slate-900 border border-slate-300 text-[11px] font-extrabold px-2.5 py-1 rounded-md uppercase tracking-wider">Video Unggulan</span>
+                    
+                    <a href="https://youtu.be/ibnSO5KF748?si=Ae6yLGBamfMPGY8x" target="_blank" rel="noopener noreferrer" class="block">
+                        <h3 class="text-base sm:text-xl font-bold text-slate-900 hover:text-blue-600 transition-colors leading-snug">
+                        ALFA - Bakwan: Afterfall Trailer [ Minecraft Roleplay ]
+                        </h3>
+                    </a>
+                    
+                    <p class="text-xs text-slate-500 font-mono">181K x ditonton • 3 minggu yang lalu</p>
+                    <p class="text-xs sm:text-sm text-slate-600 line-clamp-3 leading-relaxed">
+                        Bakwan Afterfall adalah series minecraft roleplay bertemakan fantasi dimana setiap karakter memiliki senjata surga. Bakwan Afterfall (POV Alfa) menceritakan tentang Alfa yang bertemu kawan-kawannya serta  petualangannya melawan Deviant yang jatuh ke bumi.
+                    </p>
+                    
+                    <!-- Masukkan LINK YOUTUBE Video Unggulan di href tombol ini juga -->
+                    <a href="https://youtu.be/ibnSO5KF748?si=Ae6yLGBamfMPGY8x" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="inline-flex items-center gap-2 text-xs font-bold text-white bg-slate-900 hover:bg-slate-800 px-4 py-2.5 rounded-xl shadow-md transition-all">
+                        <i class="fa-solid fa-play"></i> Tonton Sekarang
+                    </a>
+                </div>
+            </div>
+
+            <!-- BAGIAN VIDEO TERBARU & POPULAR (Berjejer Ke Samping & Langsung Buka Link YouTube) -->
+            <div>
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="font-bold text-slate-900 text-lg flex items-center gap-2">
+                        <i class="fa-solid fa-fire text-red-500"></i> Video Terbaru & Popular
+                    </h3>
+                    <span class="text-xs font-semibold text-blue-600 hover:text-blue-800 cursor-pointer hover:underline">Lihat Semua</span>
+                </div>
+
+                <!-- Container Grid (Horizontal Sejajar) -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    
+                    <!-- Kartu Video 1 -->
+                    <a href="https://youtu.be/hkDJ6GvwwxM?si=ZCqE9oIrICT1WB-w" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="bg-white text-slate-900 rounded-xl overflow-hidden border border-slate-200 shadow-md hover:shadow-lg transition-all group cursor-pointer flex flex-col justify-between block">
+                        <div class="relative aspect-video bg-slate-900 overflow-hidden">
+                            <img src="https://img.youtube.com/vi/hkDJ6GvwwxM/hqdefault.jpg" alt="Thumb" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 opacity-95 group-hover:opacity-100">
+                            <span class="absolute bottom-1.5 right-1.5 bg-black/80 text-white text-[10px] px-1.5 py-0.5 rounded font-mono">18:42</span>
+                        </div>
+                        <div class="p-3">
+                            <h4 class="font-bold text-xs sm:text-sm text-slate-900 line-clamp-2 group-hover:text-blue-600 transition-colors">
+                                Minecraft Satu Block TAPI Horor...
+                            </h4>
+                            <p class="text-[11px] text-slate-500 mt-1.5">BeaconCream • 507K x ditonton</p>
+                            <p class="text-[10px] text-slate-400">2 minggu yang lalu</p>
+                        </div>
+                    </a>
+
+                    <!-- Kartu Video 2 -->
+                    <a href="https://youtu.be/NdmxI9wr3pE?si=Ddnr1I3CNrpxqdc8" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="bg-white text-slate-900 rounded-xl overflow-hidden border border-slate-200 shadow-md hover:shadow-lg transition-all group cursor-pointer flex flex-col justify-between block">
+                        <div class="relative aspect-video bg-slate-900 overflow-hidden">
+                            <img src="https://img.youtube.com/vi/NdmxI9wr3pE/hqdefault.jpg" alt="Thumb" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 opacity-95 group-hover:opacity-100">
+                            <span class="absolute bottom-1.5 right-1.5 bg-black/80 text-white text-[10px] px-1.5 py-0.5 rounded font-mono">15:10</span>
+                        </div>
+                        <div class="p-3">
+                            <h4 class="font-bold text-xs sm:text-sm text-slate-900 line-clamp-2 group-hover:text-blue-600 transition-colors">
+                                Roblox Sendirian di Rumah...
+                            </h4>
+                            <p class="text-[11px] text-slate-500 mt-1.5">BeaconCream • 87K x ditonton</p>
+                            <p class="text-[10px] text-slate-400">5 hari yang lalu</p>
+                        </div>
+                    </a>
+
+                    <!-- Kartu Video 3 -->
+                    <a href="https://www.youtube.com/live/s4H0X0ZHV74?si=BZ6O5B51vNMWdwpF" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="bg-white text-slate-900 rounded-xl overflow-hidden border border-slate-200 shadow-md hover:shadow-lg transition-all group cursor-pointer flex flex-col justify-between block">
+                        <div class="relative aspect-video bg-slate-900 overflow-hidden">
+                            <img src="https://img.youtube.com/vi/s4H0X0ZHV74/hqdefault.jpg" alt="Thumb" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 opacity-95 group-hover:opacity-100">
+                            <span class="absolute bottom-1.5 right-1.5 bg-black/80 text-white text-[10px] px-1.5 py-0.5 rounded font-mono">02:12</span>
+                        </div>
+                        <div class="p-3">
+                            <h4 class="font-bold text-xs sm:text-sm text-slate-900 line-clamp-2 group-hover:text-blue-600 transition-colors">
+                                Green Griller - Bakwan: Afterfall Episode 1 [ Minecraft Roleplay ]
+                            </h4>
+                            <p class="text-[11px] text-slate-500 mt-1.5">BeaconCream • 365K x ditonton</p>
+                            <p class="text-[10px] text-slate-400">11 hari yang lalu</p>
+                        </div>
+                    </a>
+
+                    <!-- Kartu Video 4 -->
+                    <a href="https://www.youtube.com/live/fMuYrcC_SkQ?si=Q0OzFmnvqB5-QshL" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="bg-white text-slate-900 rounded-xl overflow-hidden border border-slate-200 shadow-md hover:shadow-lg transition-all group cursor-pointer flex flex-col justify-between block">
+                        <div class="relative aspect-video bg-slate-900 overflow-hidden">
+                            <img src="https://img.youtube.com/vi/fMuYrcC_SkQ/hqdefault.jpg" alt="Thumb" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 opacity-95 group-hover:opacity-100">
+                            <span class="absolute bottom-1.5 right-1.5 bg-black/80 text-white text-[10px] px-1.5 py-0.5 rounded font-mono">20:30</span>
+                        </div>
+                        <div class="p-3">
+                            <h4 class="font-bold text-xs sm:text-sm text-slate-900 line-clamp-2 group-hover:text-blue-600 transition-colors">
+                                GERILYA - Bakwan: Fight Back Episode 49 [ Minecraft Roleplay ]
+                            </h4>
+                            <p class="text-[11px] text-slate-500 mt-1.5">BeaconCream • 288K x ditonton</p>
+                            <p class="text-[10px] text-slate-400">1 tahun yang lalu</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="fixed bottom-5 right-5 bg-slate-900 text-white px-4 py-3 rounded-xl shadow-2xl z-50 hidden flex items-center gap-3 border border-slate-700 transition-all duration-300">
+        <i class="fa-solid fa-circle-check text-emerald-400 text-lg" id="toastIcon"></i>
+        <span class="text-xs font-semibold" id="toastMsg">Notifikasi</span>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
